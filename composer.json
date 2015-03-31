@@ -1,6 +1,8 @@
 {
     "name": "peppeocchi/zohoreports-sdk",
     "description": "ZohoReports PHP SDK",
+    "licence": "MIT",
+    "keywords": ["zoho", "zoho-reports", "zohoreports"],
     "authors": [
         {
             "name": "Giuseppe Occhipinti",

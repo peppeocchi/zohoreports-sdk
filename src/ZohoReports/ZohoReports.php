@@ -106,10 +106,10 @@ class ZohoReports
   {
     $default = [
       'format'       => 'CSV',
-      'create'       => 'true',
+      'create'       => true,
       'type'         => 'TRUNCATEADD',
-      'dateFormat'   => 'yyyy-MM-dd',
-      'autoIdentify' => 'true',
+      'dateFormat'   => 'yyyy-MM-dd HH:mm:ss',
+      'autoIdentify' => true,
       'skip'         => 0,
       'onError'      => 'SETCOLUMNEMPTY'
     ];

@@ -90,7 +90,7 @@ class ZohoReports
       throw new InvalidFileException("The file provided does not exist. {$file}");
     }
 
-    $post['ZOHO_FILE'] = new \CURLFile(realpath($file), 'text/csv', $file);
+    $post['ZOHO_FILE'] = new \CURLFile(realpath($file), 'text/csv', basename($file));
 
     return $this->request($uri, $post);
   }
@@ -106,10 +106,10 @@ class ZohoReports
   {
     $default = [
       'format'       => 'CSV',
-      'create'       => true,
+      'create'       => 'true',
       'type'         => 'TRUNCATEADD',
       'dateFormat'   => 'yyyy-MM-dd HH:mm:ss',
-      'autoIdentify' => true,
+      'autoIdentify' => 'true',
       'skip'         => 0,
       'onError'      => 'SETCOLUMNEMPTY'
     ];

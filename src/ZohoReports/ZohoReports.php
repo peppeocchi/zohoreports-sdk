@@ -6,7 +6,7 @@ class ZohoReports
   /**
    * URI
    */
-  private $uri = 'https://reportsapi.zoho.com/api/';
+  protected $uri = 'https://reportsapi.zoho.com/api/';
 
   /**
    * Api version
@@ -102,7 +102,7 @@ class ZohoReports
    *
    * @return [array]
    */
-  private function setImportParams($params)
+  protected function setImportParams($params)
   {
     $default = [
       'format'       => 'CSV',
@@ -160,7 +160,7 @@ class ZohoReports
    * Build uri
    *
    */
-  private function buildUri()
+  protected function buildUri()
   {
     $uri = $this->uri
          . $this->email . '/'
